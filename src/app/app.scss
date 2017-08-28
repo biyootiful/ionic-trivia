@@ -1,0 +1,40 @@
+.home {
+    background: #fff;
+    color: color($colors, primary);
+    margin-top: 30 px;
+}
+
+.toolbar-title {
+    color: color($colors, secondary);
+    text-align: center;
+}
+
+.tabs-md .tab-button-icon {
+    color: #f4f4f4
+}
+
+.item-md {
+    margin-bottom: 10px;
+}
+
+.list-md .item-block .item-inner {
+    border-bottom: 0px;
+}
+
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom-color: #fdfdfd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.answers {
+    cursor:pointer
+}
+
+.answers:hover {
+    background: lightgray;
+}
+
+.category {
+    color:lightgray;
+}

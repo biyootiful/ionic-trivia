@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Trivia</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-grid *ngIf="currentQuiz">
+    <ion-row>
+      <ion-col width-50 offset-25>
+        <ion-label class="category">
+          <b>Category: </b>{{currentQuiz.category}} |   
+          <b>difficulty: </b>{{currentQuiz.difficulty}}
+        </ion-label>
+     
+        <h2 class="question">{{currentQuiz.question}}</h2>
+        
+        <ion-list>
+          <ion-item class="answers" *ngFor="let answer of answers" (click)="handleAnswer(answer)">
+              {{answer}}
+          </ion-item>
+        </ion-list>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

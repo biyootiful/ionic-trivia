@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Trivia</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid *ngIf = "results">
+    <ion-row>
+      <ion-col width-50 offset-25>       
+        <h2 class="feedback">
+          Your results
+        </h2>
+        <h1>
+            You got {{correctTotal}} out of {{quizTotal}}!
+        </h1>
+        <p *ngIf="correctTotal === quizTotal">
+          You are the master of Trivia!
+        </p>
+        <p *ngIf="correctTotal/quizTotal >= .75">
+          You almost got a perfect score keep it up!
+        </p>
+        <p *ngIf="correctTotal/quizTotal < .75">
+          You can do this! Maybe try playing again?
+        </p>
+        <ion-list>
+          <ion-item *ngFor="let result of results">
+            Correct answer: {{result.correctAnswer}}
+            
+            Your answer: {{result.yourAnswer}}
+          </ion-item>  
+        </ion-list>
+        <button ion-button (click)="backHome()">Back to home</button>
+        <button ion-button (click)="restart()">Play the same quizzes again</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
