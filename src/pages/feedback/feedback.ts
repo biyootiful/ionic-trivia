@@ -34,10 +34,6 @@ export class FeedbackPage {
     });
   }
 
-  ionViewDidLoad() {
-    console.log(this.answerIsCorrect);
-  }
-
   nextQuiz() {
     this.storage.get('quizIndex').then((val) => {
       let currentQuizIndex = val;

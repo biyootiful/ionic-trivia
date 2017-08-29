@@ -25,14 +25,12 @@ export class HomePage {
     this.storage.get('option').then((val) => {
       if (val !== null) {
         this.option = JSON.parse(val);
-        console.log(this.option)
       } else {
          this.option = {
           category: 15,
           difficulty: 'medium',
           quizNum: 10
         };
-        console.log(this.option)
       };
     
       this.quizProvider.getQuiz(this.option.category, this.option.difficulty, this.option.quizNum).

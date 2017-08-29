@@ -66,7 +66,6 @@ export class GameViewPage {
           }
       results.push(quizResults);
       this.storage.set('results', results)
-      console.log(results)
     });    
   }
 
