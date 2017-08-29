@@ -20,7 +20,8 @@ A simple trivia game app built with ionic. This app uses Open Trivia DB. https:/
 <img src="https://firebasestorage.googleapis.com/v0/b/datatest-cb8b3.appspot.com/o/ionic-trivia-img%2Ftrivia2.jpg?alt=media&token=f18341a7-d9f3-4585-99f1-3ec7dc933f70">
 
 ### Todo ###
-Fix some JSON string issues
+~Fix some decoding issues~
+*If you see something like this --> &quot; I believe it's a server-side issue(php decoding), which I have no control over. Feel free to use replace() to fix faulted values but I will leave the codebase as it is, in case if someone wants to hook a different API  
 
 #### license ####
 MIT
