@@ -21,7 +21,8 @@ A simple trivia game app built with ionic. This app uses Open Trivia DB. https:/
 
 ### Todo ###
 ~Fix some decoding issues~
-*If you see something like this --> &quot; I believe it's a server-side issue(php decoding), which I have no control over. Feel free to use replace() to fix faulted values but I will leave the codebase as it is, in case if someone wants to hook a different API  
+
+>If you see something like this --> `&quot;` I believe it's a server-side issue(php decoding), which I have no control over. Feel free to use replace() to fix faulted values but I will leave the codebase as it is, in case if someone wants to hook a different API  
 
 #### license ####
 MIT
