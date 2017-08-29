@@ -23,7 +23,7 @@ export class HomePage {
 
   ionViewWillEnter(){
     this.storage.get('option').then((val) => {
-      if (val != null) {
+      if (val !== null) {
         this.option = JSON.parse(val);
         console.log(this.option)
       } else {
