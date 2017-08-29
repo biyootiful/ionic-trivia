@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <form (ngSubmit)="saveForm()">
+            <!-- category -->
+            <ion-item>
+              <ion-label>Category</ion-label>
+              <ion-select [(ngModel)]="category" name="catergory" value="number">
+                <ion-option value=12 >Music</ion-option>
+                <ion-option value=14 >Television</ion-option>
+                <ion-option value=11 >Film</ion-option>
+                <ion-option value=17 >Science & Nature</ion-option>
+                <ion-option value=18 >Computers</ion-option>
+                <ion-option value=21 >Sports</ion-option>
+                <ion-option value=27 >Animals</ion-option>
+                <ion-option value=24 >Politics</ion-option>
+                <ion-option value=25 >Art</ion-option>
+                <ion-option value=20 >Mythology</ion-option>
+              </ion-select>
+            </ion-item>
+            <!-- difficulty -->
+            <ion-item>
+              <ion-label>Difficulty</ion-label>
+              <ion-select [(ngModel)]="difficulty" name="difficulty" value="string">
+                <ion-option value="easy">Easy</ion-option>
+                <ion-option value="medium">Medium</ion-option>
+                <ion-option value="hard">Hard</ion-option>
+              </ion-select>
+            </ion-item>
+            <!-- number of quizzes -->
+            <ion-item>
+              <ion-label>
+                Number of questions
+              </ion-label>
+              <ion-input [(ngModel)]="quizNum" name="quizNum" type="number"></ion-input>
+            </ion-item>
+            <button ion-button type="submit" block>Save</button>
+          </form>
+        </ion-list>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+            

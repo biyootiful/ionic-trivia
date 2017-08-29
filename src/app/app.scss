@@ -1,16 +1,40 @@
-// http://ionicframework.com/docs/theming/
+.home {
+    background: #fff;
+    color: color($colors, primary);
+    margin-top: 30 px;
+}
 
+.toolbar-title {
+    color: color($colors, secondary);
+    text-align: center;
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.tabs-md .tab-button-icon {
+    color: #f4f4f4
+}
+
+.item-md {
+    margin-bottom: 10px;
+}
+
+.list-md .item-block .item-inner {
+    border-bottom: 0px;
+}
+
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom-color: #fdfdfd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.answers {
+    cursor:pointer
+}
+
+.answers:hover {
+    background: lightgray;
+}
+
+.category {
+    color:lightgray;
+}
