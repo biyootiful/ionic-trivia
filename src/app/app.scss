@@ -1,8 +1,3 @@
-.home {
-    background: #fff;
-    color: color($colors, primary);
-    margin-top: 30 px;
-}
 
 .toolbar-title {
     color: color($colors, secondary);
@@ -36,5 +31,13 @@
 }
 
 .category {
+    color:lightgreen;
+}
+
+.category b{
     color:lightgray;
+}
+
+img{
+     background: #fff;
 }

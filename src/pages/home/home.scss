@@ -1,6 +1,11 @@
 .home {
     text-align: center;
-    height:100vh;
     justify-content: center;
     align-items:center;
+    background: #fff;
+    color: color($colors, primary);
+}
+
+img{
+     background: #fff;
 }

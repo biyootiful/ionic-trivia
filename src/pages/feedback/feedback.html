@@ -1,9 +1,3 @@
-<!--
-  Generated template for the FeedbackPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -15,18 +9,25 @@
 
 <ion-content padding>
    <ion-grid>
-    <ion-row>
-      <ion-col width-50 offset-25>       
+    <ion-row align-items-center>
+      <ion-col class="center" align-self-center>       
         <h2 class="feedback">
           {{(answerIsCorrect === true) ? "Correct!" : "Aww wrong answer!"}}
         </h2>
-        <h3 class="feedback" *ngIf="answerIsCorrect == false">
-          Correct answer is "{{correctAnswer}}"
-        </h3>
-        <button ion-button (click)="nextQuiz()">
-          {{(currentIndex+1 === totalQuizNum) ? "Show me how I did!" : "Next question!"}}
-
-        </button>
+        <ion-img *ngIf="answerIsCorrect === false"
+          width="150" height="150" src="https://firebasestorage.googleapis.com/v0/b/datatest-cb8b3.appspot.com/o/ionic-trivia-img%2Fluna-sad.png?alt=media&token=d6423686-09c1-4c42-bdc9-b2841e543bf8">
+        </ion-img>
+        <ion-img *ngIf="answerIsCorrect === true"
+          width="150" height="150" src="https://firebasestorage.googleapis.com/v0/b/datatest-cb8b3.appspot.com/o/ionic-trivia-img%2Fluna-happy.png?alt=media&token=edbf230e-a450-4484-b34f-2c6179fd8b30">
+        </ion-img>
+        <h5 class="feedback" *ngIf="answerIsCorrect === false">
+          Correct answer is<br> "{{correctAnswer}}"
+        </h5>
+        <div class="center">
+          <button ion-button (click)="nextQuiz()">
+            {{(currentIndex+1 === totalQuizNum) ? "Show me how I did!" : "Next question!"}}
+          </button>
+        </div>
       </ion-col>    
     </ion-row>
   </ion-grid>
