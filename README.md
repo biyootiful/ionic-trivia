@@ -20,7 +20,8 @@ A simple trivia game app built with ionic. This app uses Open Trivia DB. https:/
 <img src="https://firebasestorage.googleapis.com/v0/b/datatest-cb8b3.appspot.com/o/ionic-trivia-img%2Ftrivia2.jpg?alt=media&token=f18341a7-d9f3-4585-99f1-3ec7dc933f70">
 
 ### Note ###
->If you see something like this --> `&quot;` This is an encoding issue, not the app issue. I will post a suggestion to circumvent this issue, but free to use your own solution.
+>If you see something like this --> `&quot;` This is an encoding issue, not the app issue. I will post a suggestion to circumvent this issue, but feel free to use your own solution.
+Suggestion - https://github.com/yoobi55/ionic-trivia/issues/1
 
 #### license ####
 MIT
